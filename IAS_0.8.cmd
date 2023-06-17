@@ -181,7 +181,13 @@ set _status=Status_Unclear
 set _col=%_Yellow%
 )
 		
-type logo
+
+echo:            _____ _____  __  __                _   _            _             
+echo:           |_   _|  __ \|  \/  |     /\       | | (_)          | |            
+echo:             | | | |  | | \  / |    /  \   ___| |_ ___   ____ _| |_ ___  _ __ 
+echo:             | | | |  | | |\/| |   / /\ \ / __| __| \ \ / / _` | __/ _ \| '__|
+echo:            _| |_| |__| | |  | |  / ____ \ (__| |_| |\ V / (_| | || (_) | |   
+echo:           |_____|_____/|_|  |_| /_/    \_\___|\__|_| \_/ \__,_|\__\___/|_|   
 echo: 		
 echo:          _____________________________________________   
 echo:   
@@ -224,33 +230,14 @@ exit /b
 
 :readme
 
-set "_ReadMe=%SystemRoot%\Temp\ReadMe.txt"
+set "_
+
+=%SystemRoot%\Temp\ReadMe.txt"
 if exist "%_ReadMe%" del /f /q "%_ReadMe%" %nul%
 call :export txt "%_ReadMe%"
 start notepad "%_ReadMe%"
 timeout /t 2 %nul%
 del /f /q "%_ReadMe%"
-exit /b
-
-
-::  Extract the text from batch script without character and file encoding issue
-::  Thanks to @abbodi1406
-
-:export
-
-%nul% %_psc% "$f=[io.file]::ReadAllText('!_batp!') -split \":%~1\:.*`r`n\"; [io.file]::WriteAllText('%~2',$f[1].Trim(),[System.Text.Encoding]::ASCII);"
-exit/b
-
-::========================================================================================================================================
-
-:logo
-
-set "_logo=%SystemRoot%\Temp\logo.txt"
-if exist "%_logo%" del /f /q "%_logo%" %nul%
-call :export txt "%_logo%"
-start notepad "%_logo%"
-timeout /t 2 %nul%
-del /f /q "%_logo%"
 exit /b
 
 
