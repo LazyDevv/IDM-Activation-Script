@@ -181,7 +181,7 @@ set _status=Status_Unclear
 set _col=%_Yellow%
 )
 		
-type logo.txt
+type logo
 echo: 		
 echo:          _____________________________________________   
 echo:   
