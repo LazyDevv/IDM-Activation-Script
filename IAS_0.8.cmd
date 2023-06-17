@@ -153,7 +153,7 @@ if defined activate goto _activate
 :MainMenu
 
 cls
-title  IDM Activation Script 0.7 - @ModByPiash
+title  IDM Activation Script
 mode 65, 25
 
 :: Check firewall status
@@ -180,14 +180,9 @@ if not %_ena%==3 if not %_dis%==3 (
 set _status=Status_Unclear
 set _col=%_Yellow%
 )
-
-call :_color2 %_White% "        " %_Green% "  Create By Piash"
+		
 echo:          _____________________________________________   
-echo: 
-echo:          Telegram: @ModByPiash
-echo:          Github: https://github.com/lstprjct
-echo:          _____________________________________________   
-echo:                                                          
+echo:   
 echo:          [1] Activate IDM                                
 echo:          [2] Reset IDM Activation / Trial in Registry
 echo:          _____________________________________________   
@@ -377,7 +372,7 @@ echo:
 echo:
 timeout /t 3
 
-start https://github.com/lstprjct/IDM-Activation-Script
+start https://github.com/LazyDevv/IDM-Activation-Script
 goto MainMenu
 
 ::========================================================================================================================================
@@ -424,7 +419,7 @@ echo:
 echo Applying registration details...
 echo:
 
-If not defined name set name=Piash
+If not defined name set name="Gaming Cockroaches Standard Employee License"
 
 set "reg=HKCU\SOFTWARE\DownloadManager /v FName /t REG_SZ /d "%name%"" & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v LName /t REG_SZ /d """ & call :_rcont
@@ -867,7 +862,7 @@ ________________________________________________________________________________
    @dbenham		- Set buffer height independently of window height
 			  stackoverflow.com/a/13351373
 
-   @ModByPiash (Me)	- Add and fix some missing features.
+   @ModByPiash     	- Add and fix some missing features.
 
    @vavavr00m  		- Changed set name to prompt for a name
    
@@ -875,9 +870,7 @@ _________________________________
 
    IDM Activation Script
    
-   Homepage:	https://github.com/lstprjct/IDM-Activation-Script
-   
-   Telegram:	https://t.me/ModByPiash
+   Homepage:	https://github.com/LazyDevv/IDM-Activation-Script
 
 __________________________________________________________________________________________________
 :txt:
