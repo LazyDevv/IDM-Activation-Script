@@ -243,6 +243,27 @@ exit/b
 
 ::========================================================================================================================================
 
+:logo
+
+set "_logo=%SystemRoot%\Temp\logo.txt"
+if exist "%_logo%" del /f /q "%_logo%" %nul%
+call :export txt "%_logo%"
+start notepad "%_logo%"
+timeout /t 2 %nul%
+del /f /q "%_logo%"
+exit /b
+
+
+::  Extract the text from batch script without character and file encoding issue
+::  Thanks to @abbodi1406
+
+:export
+
+%nul% %_psc% "$f=[io.file]::ReadAllText('!_batp!') -split \":%~1\:.*`r`n\"; [io.file]::WriteAllText('%~2',$f[1].Trim(),[System.Text.Encoding]::ASCII);"
+exit/b
+
+::========================================================================================================================================
+
 :_reset
 
 if not defined Unattended (
