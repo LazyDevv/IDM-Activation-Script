@@ -151,7 +151,7 @@ if defined activate goto _activate
 )
 
 :MainMenu
-
+chcp 65001
 cls
 title  IDM Activation Script
 mode 65, 25
@@ -189,7 +189,7 @@ echo:           ▐░░░▀████▀▄░░░▌       ◇───
 echo:           ═▀▄▄▄▄▄▄▄▄▄▄▄▀═
 echo:           
 echo: 		
-echo:          _____________________________________________    
+echo:          _____________________________________________   
 echo:   
 echo:          [1] Activate IDM                                
 echo:          [2] Reset IDM Activation / Trial in Registry
