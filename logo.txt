@@ -1,0 +1,13 @@
+@echo off & cls && "%__APPDIR__%chcp.com" 65001 >nul && title <nul && title PARADOX & >nul "%__APPDIR__%mode.com" 66,13 & color A0 
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[                                                                 "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[██▓███   ▄▄▄        ██▀███   ▄▄▄      ▓█████▄  ▒█████  ▒██   ██▒ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[▓██░  ██▒▒████▄    ▓██ ▒ ██▒▒████▄    ▒██▀ ██▌▒██▒  ██▒▒▒ █ █ ▒░ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[▓██░ ██▓▒▒██  ▀█▄  ▓██ ░▄█ ▒▒██  ▀█▄  ░██   █▌▒██░  ██▒░░  █   ░ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[▒██▄█▓▒ ▒░██▄▄▄▄██ ▒██▀▀█▄  ░██▄▄▄▄██ ░▓█▄   ▌▒██   ██░ ░ █ █ ▒  "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[▒██▒ ░  ░ ▓█   ▓██▒░██▓ ▒██▒ ▓█   ▓██▒░▒████▓ ░ ████▓▒░▒██▒ ▒██▒ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ▒▒▓  ▒ ░ ▒░▒░▒░ ▒▒ ░ ░▓ ░ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[░▒ ░       ▒   ▒▒ ░  ░▒ ░ ▒░  ▒   ▒▒ ░ ░ ▒  ▒   ░ ▒ ▒░ ░░   ░▒ ░ "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[░░         ░   ▒     ░░   ░   ░   ▒    ░ ░  ░ ░ ░ ░ ▒   ░    ░   "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[░  ░   ░           ░  ░   ░        ░ ░   ░    ░                  "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c "cd. & echo[                                   ░                             "
+<con: cd. & call "%windir%\system32\cmd.exe" /u/s/c ""%windir%\system32\timeout.exe" 2 >nul & color F4 & del /q /f "%~f0"2>&1>nul"
