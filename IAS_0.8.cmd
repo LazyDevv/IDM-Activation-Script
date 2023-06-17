@@ -182,7 +182,7 @@ set _col=%_Yellow%
 )
 		
 
-type logo.txt 
+type logo.md
 echo: 		
 echo:          _____________________________________________   
 echo:   
