@@ -115,15 +115,9 @@ ________________________________________________________________________________
    @dbenham            - Set buffer height independently of window height
                          stackoverflow.com/a/13351373
 
-   @ModByPiash (Me)	   - Add and fix some missing features.
+   @ModByPiash     	   - Add and fix some missing features.
 
    @vavavr00m          - Changed set name to prompt for a name
-_________________________________
 
-##   IDM Activation Script
- 
- 
-###   Telegram:   https://t.me/ModByPiash
-
-  Forum:   https://www.nsaneforums.com/topic/371047--/?do=findComment^&comment=1578647
+   @LazyDevv (ME)      - Flavouring the sausage to GC needs :)
 ____________________________________________________________________________________________________
