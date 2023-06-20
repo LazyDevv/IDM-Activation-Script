@@ -119,5 +119,5 @@ ________________________________________________________________________________
 
    @vavavr00m          - Changed set name to prompt for a name
 
-   @LazyDevv (ME)      - Flavouring the sausage to GC needs :)
+   @LazyDevv (ME)      - Added cute goldfish and shorter launch command.
 ____________________________________________________________________________________________________
