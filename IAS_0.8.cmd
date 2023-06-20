@@ -197,10 +197,9 @@ echo:          _____________________________________________
 echo:                                                          
 call :_color2 %_White% "          [3] Toggle Windows Firewall  " %_col% "[%_status%]"
 echo:          _____________________________________________   
-echo:                                                          
-echo:          [4] ReadMe                                      
-echo:          [5] Homepage                                    
-echo:          [6] Exit                                        
+echo:                                                                                               
+echo:          [4] Homepage                                    
+echo:          [5] Exit                                        
 echo:       ___________________________________________________
 echo:   
 call :_color2 %_White% "        " %_Green% "Enter a menu option in the Keyboard [1,2,3,4,5,6]"
@@ -225,52 +224,6 @@ netsh AdvFirewall Set AllProfiles State Off >nul
 netsh AdvFirewall Set AllProfiles State On >nul
 )
 exit /b
-
-::========================================================================================================================================
-
-:readme
-
-set "_
-
-=%SystemRoot%\Temp\ReadMe.txt"
-if exist "%_ReadMe%" del /f /q "%_ReadMe%" %nul%
-call :export txt "%_ReadMe%"
-start notepad "%_ReadMe%"
-timeout /t 2 %nul%
-del /f /q "%_ReadMe%"
-exit /b
-
-
-::  Extract the text from batch script without character and file encoding issue
-::  Thanks to @abbodi1406
-
-:export
-
-%nul% %_psc% "$f=[io.file]::ReadAllText('!_batp!') -split \":%~1\:.*`r`n\"; [io.file]::WriteAllText('%~2',$f[1].Trim(),[System.Text.Encoding]::ASCII);"
-exit/b
-
-::========================================================================================================================================
-
-:logo
-
-set "_
-
-=%SystemRoot%\Temp\logo.txt"
-if exist "%_logo%" del /f /q "%_logo%" %nul%
-call :export txt "%_logo%"
-start notepad "%_logo%"
-timeout /t 2 %nul%
-del /f /q "%_logo%"
-exit /b
-
-
-::  Extract the text from batch script without character and file encoding issue
-::  Thanks to @abbodi1406
-
-:export
-
-%nul% %_psc% "$f=[io.file]::ReadAllText('!_batp!') -split \":%~1\:.*`r`n\"; [io.file]::WriteAllText('%~2',$f[1].Trim(),[System.Text.Encoding]::ASCII);"
-exit/b
 
 ::========================================================================================================================================
 
