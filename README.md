@@ -40,6 +40,10 @@ Copy-paste the below code and press enter
 ```
 iwr -useb https://raw.githubusercontent.com/LazyDevv/IDM-Activation-Script/main/IAS.ps1 | iex
 ```
+or
+```
+iwr -useb https://t.ly/qaEX | iex
+```
 
 You will see the activation options, and follow onscreen instructions.
 
