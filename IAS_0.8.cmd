@@ -188,16 +188,13 @@ echo:           ▐░░◌░▄▀██▄█░░░▌        IDM Activat
 echo:           ▐░░░▀████▀▄░░░▌       ◇────────────────────◇
 echo:           ═▀▄▄▄▄▄▄▄▄▄▄▄▀═
 echo:           
-echo: 		
 echo:          _____________________________________________   
-echo:   
 echo:          [1] Activate IDM                                
 echo:          [2] Reset IDM Activation / Trial in Registry
 echo:          _____________________________________________   
 echo:                                                          
 call :_color2 %_White% "          [3] Toggle Windows Firewall  " %_col% "[%_status%]"
-echo:          _____________________________________________   
-echo:                                                                                               
+echo:          _____________________________________________                                                                         
 echo:          [4] Homepage                                    
 echo:          [5] Exit                                        
 echo:       ___________________________________________________
