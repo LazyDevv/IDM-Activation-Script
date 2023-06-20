@@ -452,12 +452,12 @@ echo:
 echo Applying registration details...
 echo:
 
-If not defined name set name=Gaming Cockroaches Standard Employee License
+If not defined name set name=GC Standard Employee License
 
 set "reg=HKCU\SOFTWARE\DownloadManager /v FName /t REG_SZ /d "%name%"" & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v LName /t REG_SZ /d """ & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v Email /t REG_SZ /d "info@tonec.com"" & call :_rcont
-set "reg=HKCU\SOFTWARE\DownloadManager /v Serial /t REG_SZ /d "FOX6H-3KWH4-7TSIN-Q4US7"" & call :_rcont
+set "reg=HKCU\SOFTWARE\DownloadManager /v Serial /t REG_SZ /d "GGEZZ-EZ696-SEGSY-CHOTO"" & call :_rcont
 
 echo:
 echo Triggering a few downloads to create certain registry keys, please wait...
