@@ -355,7 +355,7 @@ echo:
 echo:
 timeout /t 3
 
-start https://github.com/LazyDevv/IDM-Activation-Script
+start https://gamingcockroaches.carrd.co/
 goto MainMenu
 
 ::========================================================================================================================================
