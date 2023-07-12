@@ -412,7 +412,7 @@ set "reg=HKCU\SOFTWARE\DownloadManager /v Serial /t REG_SZ /d "SC96H-3KWH4-7TSIN
 echo:
 echo Triggering a few downloads to create certain registry keys, please wait...
 
-set "file=%_temp%\temp.png"
+set "file=%_temp%\fucker.png"
 set _fileexist=
 set _derror=
 
@@ -461,7 +461,7 @@ exit /b
 
 set /a attempt=0
 if exist "%file%" del /f /q "%file%"
-start "" /B "!IDMan!" /n /d "%link%" /p "%_temp%" /f temp.png
+start "" /B "!IDMan!" /n /d "%link%" /p "%_temp%" /f fucker.png
 
 :check_file
 
